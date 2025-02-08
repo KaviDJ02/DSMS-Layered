@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane fx:id="dashboardAP" prefHeight="720.0" prefWidth="1035.0" styleClass="anchor-pane" stylesheets="@../css/DashboardView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.drivesmart.dsms.controller.DashBoardViewController">
+   <children>
+      <!-- Dashboard Card: Current Students -->
+      <AnchorPane fx:id="currentStudentsCard" layoutX="70.0" layoutY="86.0" prefHeight="148.0" prefWidth="254.0" styleClass="card">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" styleClass="card-title" text="Current Students" />
+            <FontIcon iconLiteral="bi-person-fill" iconSize="30" layoutX="210.0" layoutY="38.0" styleClass="font-icon" />
+            <Label fx:id="currentStudentLabel" alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="81.0" prefWidth="214.0" styleClass="card-number" text="28">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+      <!-- Dashboard Card: Instructors -->
+      <AnchorPane fx:id="instructorsCard" layoutX="371.0" layoutY="86.0" prefHeight="148.0" prefWidth="254.0" styleClass="card">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" styleClass="card-title" text="Instructors" />
+            <FontIcon iconLiteral="bi-person-badge-fill" iconSize="30" layoutX="210.0" layoutY="38.0" styleClass="font-icon" />
+            <Label fx:id="instructorLabel" alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="81.0" prefWidth="214.0" styleClass="card-number" text="28">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+      <!-- Dashboard Card: Vehicles -->
+      <AnchorPane fx:id="vehiclesCard" layoutX="678.0" layoutY="86.0" prefHeight="148.0" prefWidth="254.0" styleClass="card">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" styleClass="card-title" text="Vehicles" />
+            <FontIcon iconLiteral="dashicons-car" iconSize="30" layoutX="210.0" layoutY="38.0" styleClass="font-icon" />
+            <Label fx:id="vehicleLabel" alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="81.0" prefWidth="214.0" styleClass="card-number" text="28">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+      <!-- Dashboard Card: Courses -->
+      <AnchorPane fx:id="coursesCard" layoutX="70.0" layoutY="286.0" prefHeight="148.0" prefWidth="254.0" styleClass="card">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" styleClass="card-title" text="Packages" />
+            <FontIcon iconLiteral="bi-journals" iconSize="30" layoutX="210.0" layoutY="38.0" styleClass="font-icon" />
+            <Label fx:id="courseLabel" alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="81.0" prefWidth="214.0" styleClass="card-number" text="28">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+      <!-- Dashboard Card: Today's Sessions -->
+      <AnchorPane fx:id="todaysSessionsCard" layoutX="371.0" layoutY="286.0" prefHeight="148.0" prefWidth="254.0" styleClass="card">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" styleClass="card-title" text="Today's Sessions" />
+            <FontIcon iconLiteral="dashicons-calendar-alt" iconSize="30" layoutX="210.0" layoutY="38.0" styleClass="font-icon" />
+            <Label fx:id="todaysSessionLabel" alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="81.0" prefWidth="214.0" styleClass="card-number" text="28">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+      <!-- Dashboard Card: Sent Emails -->
+      <AnchorPane fx:id="sentEmailsCard" layoutX="678.0" layoutY="286.0" prefHeight="148.0" prefWidth="254.0" styleClass="card">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" styleClass="card-title" text="Sent Emails" />
+            <FontIcon iconLiteral="dashicons-email" iconSize="30" layoutX="210.0" layoutY="38.0" styleClass="font-icon" />
+            <Label fx:id="sentEmailLabel" alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="81.0" prefWidth="214.0" styleClass="card-number" text="28">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+      <!-- Dashboard Card: Employees -->
+      <AnchorPane fx:id="employeesCard" layoutX="70.0" layoutY="485.0" prefHeight="148.0" prefWidth="254.0" styleClass="card">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" styleClass="card-title" text="Employees" />
+            <FontIcon iconLiteral="dashicons-businessman" iconSize="30" layoutX="210.0" layoutY="38.0" styleClass="font-icon" />
+            <Label fx:id="employeeLabel" alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="81.0" prefWidth="214.0" styleClass="card-number" text="28">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+      <!-- Dashboard Card: Received Payments -->
+      <AnchorPane fx:id="receivedPaymentsCard" layoutX="371.0" layoutY="485.0" prefHeight="148.0" prefWidth="254.0" styleClass="card">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" styleClass="card-title" text="Received Payments" />
+            <FontIcon iconLiteral="dashicons-money-alt" iconSize="30" layoutX="210.0" layoutY="38.0" styleClass="font-icon" />
+            <Label fx:id="receivedPaymentLabel" alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="81.0" prefWidth="214.0" styleClass="card-number" text="28">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+      <!-- Dashboard Card: Late Payments -->
+      <AnchorPane fx:id="latePaymentsCard" layoutX="678.0" layoutY="485.0" prefHeight="148.0" prefWidth="254.0" styleClass="card">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" styleClass="card-title" text="Incomplete Payments" />
+            <FontIcon iconLiteral="bi-exclamation-circle-fill" iconSize="30" layoutX="210.0" layoutY="38.0" styleClass="font-icon" />
+            <Label fx:id="latePaymentLabel" alignment="CENTER" layoutX="26.0" layoutY="45.0" prefHeight="81.0" prefWidth="214.0" styleClass="card-number" text="28">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+   </children>
+</AnchorPane>

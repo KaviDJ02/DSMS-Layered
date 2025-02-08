@@ -1,0 +1,82 @@
+/* Main Background */
+.anchor-pane {
+    -fx-background-color: linear-gradient(to bottom right, #1e1e1e, #2b2b2b); /* Gradient for depth */
+    -fx-padding: 20px;
+}
+
+/* General Card Styling - No shadow in idle */
+.card {
+    -fx-background-color: #2f2f2f;
+    -fx-background-radius: 15px;
+    -fx-border-color: rgba(255, 255, 255, 0.1); /* Subtle white border in idle */
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 15px;
+    -fx-padding: 20px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects for individual cards */
+#currentStudentsCard:hover {
+    -fx-border-color: #FFD700; /* Gold border */
+    -fx-effect: dropshadow(gaussian, rgba(255, 215, 0, 0.7), 15, 0.5, 0, 5); /* Soft gold shadow */
+}
+
+#instructorsCard:hover {
+    -fx-border-color: #ADFF2F; /* Green-yellow border */
+    -fx-effect: dropshadow(gaussian, rgba(173, 255, 47, 0.7), 15, 0.5, 0, 5); /* Soft green-yellow shadow */
+}
+
+#vehiclesCard:hover {
+    -fx-border-color: #1E90FF; /* Dodger blue border */
+    -fx-effect: dropshadow(gaussian, rgba(30, 144, 255, 0.7), 15, 0.5, 0, 5); /* Soft blue shadow */
+}
+
+#coursesCard:hover {
+    -fx-border-color: #FF69B4; /* Hot pink border */
+    -fx-effect: dropshadow(gaussian, rgba(255, 105, 180, 0.7), 15, 0.5, 0, 5); /* Soft pink shadow */
+}
+
+#todaysSessionsCard:hover {
+    -fx-border-color: #FFA500; /* Orange border */
+    -fx-effect: dropshadow(gaussian, rgba(255, 165, 0, 0.7), 15, 0.5, 0, 5); /* Soft orange shadow */
+}
+
+#sentEmailsCard:hover {
+    -fx-border-color: #4B0082; /* Indigo border */
+    -fx-effect: dropshadow(gaussian, rgba(75, 0, 130, 0.7), 15, 0.5, 0, 5); /* Soft indigo shadow */
+}
+
+#employeesCard:hover {
+    -fx-border-color: #8A2BE2; /* Blue-violet border */
+    -fx-effect: dropshadow(gaussian, rgba(138, 43, 226, 0.7), 15, 0.5, 0, 5); /* Soft violet shadow */
+}
+
+#receivedPaymentsCard:hover {
+    -fx-border-color: #00FA9A; /* Medium spring green border */
+    -fx-effect: dropshadow(gaussian, rgba(0, 250, 154, 0.7), 15, 0.5, 0, 5); /* Soft green shadow */
+}
+
+#latePaymentsCard:hover {
+    -fx-border-color: #FF4500; /* Orange-red border */
+    -fx-effect: dropshadow(gaussian, rgba(255, 69, 0, 0.7), 15, 0.5, 0, 5); /* Soft red shadow */
+}
+
+/* Card Title Styling */
+.card-title {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Font Icon Styling */
+.font-icon {
+    -fx-fill: #00ffff; /* Cyan for a vibrant touch */
+    -fx-font-size: 24px;
+}
+
+/* Number Label Styling */
+.card-number {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 55px;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,102 @@
+/* PackageView.css */
+
+/* Root Pane */
+.root {
+    -fx-background-color: #1e1e2f;
+    -fx-padding: 20;
+}
+
+/* Labels */
+Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+Label#totalPackageCount,
+Label#mostPopularPackage,
+Label#leastPopularPackage {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4466aa;
+}
+
+Label#packageNameLabel {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+/* TextFields and TextArea */
+TextField, TextArea {
+    -fx-background-color: #2e2e3f;
+    -fx-border-color: #4466aa;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #999999;
+    -fx-font-size: 13px;
+    -fx-padding: 5;
+}
+
+TextField:focused, TextArea:focused {
+    -fx-border-color: #6699ff;
+    -fx-border-width: 2;
+}
+
+/* Buttons */
+Button {
+    -fx-background-color: #4466aa;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 5 20;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-background-color: #6699ff;
+}
+
+Button:pressed {
+    -fx-background-color: #335588;
+}
+
+/* ScrollPane */
+ScrollPane {
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+}
+
+ScrollPane .viewport {
+    -fx-background-color: #1e1e2f;
+}
+
+/* VBox Container for Packages */
+VBox {
+    -fx-background-color: #2e2e3f;
+    -fx-border-color: #4466aa;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+}
+
+/* Anchor Panes */
+.anchor-pane {
+    -fx-background-color: #2e2e3f;
+    -fx-border-color: #4466aa;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+}
+
+/* Icons */
+FontIcon {
+    -fx-icon-color: #ffffff;
+}
+
+/* Back Button */
+FontIcon:hover {
+    -fx-icon-color: #ff6666;
+}

@@ -1,0 +1,127 @@
+/* Root Styling */
+.root {
+    -fx-background-color: #1e1e2f;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #e0e0e0;
+}
+
+/* Card Styling */
+.card-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #61dafb;
+}
+
+.card-value {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4caf50;
+}
+
+/* Search Field Styling */
+.search-field {
+    -fx-background-color: #2c2c3e;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #a0a0a0;
+    -fx-border-color: #61dafb;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10;
+}
+
+.search-field:focused {
+    -fx-border-color: #4caf50;
+    -fx-background-color: #333344;
+}
+
+/* Buttons Styling */
+.button {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #61dafb;
+}
+
+.button:pressed {
+    -fx-background-color: #336699;
+}
+
+.cancelButton {
+    -fx-background-color: #ff6666;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.cancelButton:hover {
+    -fx-background-color: #ff3333;
+}
+
+/* ScrollPane Styling */
+.scroll-pane {
+    -fx-background-color: #1e1e2f;
+    -fx-border-color: #3c3c4e;
+    -fx-border-radius: 8px;
+    -fx-padding: 10;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/* ListView Styling */
+.list-view {
+    -fx-background-color: #2c2c3e;
+    -fx-border-color: #3c3c4e;
+    -fx-border-radius: 8px;
+    -fx-cell-size: 40px;
+}
+
+.list-cell {
+    -fx-text-fill: #e0e0e0;
+}
+
+/* Labels Styling */
+.label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+}
+
+.label.error {
+    -fx-text-fill: #ff6666;
+    -fx-font-weight: bold;
+}
+
+/* ChoiceBox Styling */
+.choice-box {
+    -fx-background-color: #2c2c3e;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #61dafb;
+    -fx-border-radius: 8px;
+    -fx-padding: 5;
+}
+
+/* DatePicker Styling */
+.date-picker {
+    -fx-background-color: #2c2c3e;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #61dafb;
+    -fx-border-radius: 8px;
+    -fx-padding: 5;
+}
+
+.date-picker:focused {
+    -fx-border-color: #4caf50;
+}
+
+/* FontIcon Styling */
+.font-icon {
+    -fx-icon-color: #61dafb;
+}

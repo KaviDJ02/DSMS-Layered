@@ -1,0 +1,126 @@
+/*!* Background settings *!*/
+/*.root {*/
+/*    -fx-background-color: #282828;*/
+/*}*/
+
+/*!* Pane styling for white card *!*/
+/*.rounded-pane {*/
+/*    -fx-background-color: rgba(32, 32, 32, 0.95);*/
+/*    -fx-background-radius: 20;*/
+/*    -fx-border-radius: 20;*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);*/
+/*}*/
+
+/* Background settings */
+.root {
+    -fx-background-color: #0e0e0e;
+    -fx-background-image: url('../assets/bg2.png');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: rgba(0, 0, 0, 1); /* Adjust the opacity here */
+}
+
+/* Pane styling for white card */
+.rounded-pane {
+    -fx-background-color: rgba(32, 32, 32, 0.8);
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+/* Login Label */
+.label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fafafa;
+}
+
+.label#msgLabel {
+    -fx-text-fill: #faf9f9;
+    -fx-font-size: 12px;
+}
+
+.label#msgLabel2 {
+    -fx-text-fill: #faf9f9;
+    -fx-font-size: 12px;
+}
+
+.msgLabel {
+    -fx-text-fill: #faf9f9;
+    -fx-font-size: 12px;
+}
+
+.label#forgotPWLabel {
+    -fx-text-fill: #4895fd;
+    -fx-font-size: 12px;
+}
+
+.label#forgotPWLabel:hover {
+    -fx-text-fill: #1C86EE;
+    -fx-underline: true;
+}
+
+.font-icon#feedbackIcon {
+    -fx-icon-color: #FF4D4D;
+}
+
+/* FontIcon styling */
+.font-icon {
+    -fx-icon-color: #1E90FF;
+    -fx-opacity: 0.7;
+}
+
+.font-icon:hover {
+    -fx-opacity: 1.0;
+    -fx-cursor: hand;
+}
+
+/* Username and Password Fields */
+.text-field,
+.password-field {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 1;
+    -fx-padding: 0 5 0 30;
+    -fx-prompt-text-fill: #AAAAAA;
+    -fx-font-size: 14px;
+    /*-fx-background-color: linear-gradient(to bottom, #F8FAFC, #E0E7FF);*/
+    -fx-background-color: #F8FAFC;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+    -fx-text-fill: #333333;
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 2;
+    -fx-background-color: #F8FAFC;
+    -fx-effect: dropshadow(three-pass-box, rgba(30,144,255,0.5), 10, 0, 0, 5);
+}
+
+.text-field:hover,
+.password-field:hover {
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 1.5;
+    -fx-background-color: #d8d7d7;
+}
+
+/* Button Styling */
+.button {
+    -fx-background-color: linear-gradient(to right, #1E90FF, #4682B4);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #1C86EE;
+    -fx-cursor: hand;
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to right, #1A78E6, #5B9BD5);
+}

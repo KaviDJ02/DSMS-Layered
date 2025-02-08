@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1035.0" styleClass="root" stylesheets="@../css/SettingsView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.drivesmart.dsms.controller.SettingsViewController">
+   <children>
+      <AnchorPane fx:id="accountPane" prefHeight="720.0" prefWidth="1035.0" visible="false">
+         <children>
+            <FontIcon iconLiteral="bi-person-circle" iconSize="70" layoutX="189.0" layoutY="254.0" styleClass="font-icon" />
+            <Label fx:id="nameLabel" layoutX="294.0" layoutY="193.0" prefHeight="17.0" prefWidth="283.0" styleClass="section-header" />
+            <Label fx:id="positionLabel" layoutX="294.0" layoutY="227.0" prefHeight="17.0" prefWidth="119.0" />
+            <Label layoutX="217.0" layoutY="328.0" styleClass="section-header" text="Change Email" />
+            <PasswordField fx:id="emailTF" layoutX="217.0" layoutY="390.0" prefHeight="40.0" prefWidth="260.0" promptText="Enter new email" />
+            <Button layoutX="217.0" layoutY="490.0" onAction="#changeEmailOnAction" prefHeight="40.0" prefWidth="260.0" styleClass="action-button" text="Change Email" />
+            <FontIcon iconLiteral="bi-envelope-fill" iconSize="30" layoutX="167.0" layoutY="357.0" styleClass="font-icon" />
+            <Label layoutX="645.0" layoutY="328.0" styleClass="section-header" text="Change Password" />
+            <PasswordField fx:id="oldPasswordTF" layoutX="645.0" layoutY="390.0" prefHeight="40.0" prefWidth="260.0" promptText="Enter old password" />
+            <PasswordField fx:id="newPasswordTF" layoutX="646.0" layoutY="443.0" prefHeight="40.0" prefWidth="260.0" promptText="Enter new password" />
+            <PasswordField fx:id="ReNewPasswordTF" layoutX="646.0" layoutY="497.0" prefHeight="40.0" prefWidth="260.0" promptText="Re-enter new password" />
+            <Button layoutX="646.0" layoutY="601.0" onAction="#ChangePasswordOnAction" prefHeight="40.0" prefWidth="260.0" styleClass="action-button" text="Change Password" />
+            <FontIcon iconLiteral="bi-key-fill" iconSize="30" layoutX="582.0" layoutY="358.0" styleClass="font-icon" />
+            <Label fx:id="emailMsgLabel" layoutX="217.0" layoutY="452.0" prefHeight="17.0" prefWidth="260.0" />
+            <Label fx:id="pwMsgLabel" layoutX="646.0" layoutY="560.0" prefHeight="17.0" prefWidth="260.0" />
+            <Button layoutX="739.0" layoutY="199.0" mnemonicParsing="false" onAction="#deactivateBtnOnAction" prefHeight="40.0" prefWidth="142.0" text="Deativate Account" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="adminPane" prefHeight="720.0" prefWidth="1035.0" styleClass="root" visible="false">
+         <children>
+            <AnchorPane layoutX="143.0" layoutY="140.0" prefHeight="60.0" prefWidth="309.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="22.0" text="Total User Conut :" />
+                  <Label fx:id="userCountLabel" layoutX="172.0" layoutY="22.0" prefHeight="17.0" prefWidth="82.0" text="20" />
+               </children>
+            </AnchorPane>
+            <ScrollPane hbarPolicy="NEVER" layoutX="67.0" layoutY="250.0" prefHeight="399.0" prefWidth="462.0" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="usersVbox" prefHeight="399.0" prefWidth="462.0" styleClass="vbox" />
+               </content>
+            </ScrollPane>
+            <AnchorPane layoutX="632.0" layoutY="235.0" prefHeight="390.0" prefWidth="325.0">
+               <children>
+                  <Button layoutX="76.0" layoutY="325.0" mnemonicParsing="false" onAction="#addUserBtnOnAction" prefHeight="30.0" prefWidth="174.0" text="Add User" />
+                  <TextField fx:id="usernameTF" layoutX="71.0" layoutY="95.0" prefHeight="40.0" prefWidth="186.0" promptText="username" />
+                  <TextField fx:id="empTF" layoutX="71.0" layoutY="145.0" prefHeight="40.0" prefWidth="186.0" promptText="employee" />
+                  <TextField fx:id="pwTF" layoutX="71.0" layoutY="195.0" prefHeight="40.0" prefWidth="186.0" promptText="password" />
+                  <ChoiceBox fx:id="roleChoiceBox" layoutX="71.0" layoutY="243.0" prefHeight="30.0" prefWidth="126.0" />
+                  <Label layoutX="139.0" layoutY="29.0" text="Add User" />
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+
+      <AnchorPane fx:id="databasePane" prefHeight="720.0" prefWidth="1035.0" styleClass="root">
+         <children>
+            <TextField fx:id="titleTF" layoutX="572.0" layoutY="284.0" prefHeight="30.0" prefWidth="254.0" promptText="title" />
+            <Label layoutX="579.0" layoutY="265.0" text="Title" />
+            <TextField fx:id="urlTF" layoutX="572.0" layoutY="353.0" prefHeight="30.0" prefWidth="411.0" promptText="https://drive.google.com/F76T....." />
+            <Label layoutX="579.0" layoutY="332.0" text="URL" />
+            <ChoiceBox fx:id="packageChoiceBox" layoutX="572.0" layoutY="429.0" prefHeight="30.0" prefWidth="180.0" />
+            <Label layoutX="579.0" layoutY="406.0" text="Package " />
+            <Button fx:id="addSrcBtn" layoutX="572.0" layoutY="522.0" mnemonicParsing="false" onAction="#addSrcBtnOnAction" prefHeight="30.0" prefWidth="220.0" text="Add Resource" />
+            <Label fx:id="srcMsgLabel" alignment="CENTER" layoutX="572.0" layoutY="488.0" prefHeight="17.0" prefWidth="292.0" />
+            <Label layoutX="454.0" layoutY="149.0" text="Add Resource">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ListView fx:id="resrcListView" layoutX="68.0" layoutY="244.0" prefHeight="412.0" prefWidth="411.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="supportPane" prefHeight="720.0" prefWidth="1035.0" styleClass="root" visible="false">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="443.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/qr.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="455.0" layoutY="251.0" prefHeight="17.0" prefWidth="126.0" text="Contact The Developer" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="aboutPane" prefHeight="720.0" prefWidth="1035.0" styleClass="root" visible="false" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+         <!-- Title -->
+         <Label layoutX="370.0" layoutY="127.0" style="-fx-font-size: 28px; -fx-font-weight: bold;" text="About DriveSmart DSMS" />
+         <Text fill="WHITE" layoutX="81.0" layoutY="200.0" style="-fx-font-size: 16px;" text="DriveSmart DSMS (Driving School Management System) is a comprehensive software solution designed to streamline the management of driving schools. Our software provides tools to manage students, instructors, vehicles, course packages, and payments all in one place, ensuring efficiency and professionalism in running your driving school." textAlignment="CENTER" wrappingWidth="874.0" />
+         <Label layoutX="435.0" layoutY="306.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Version Information:" />
+         <Text fill="WHITE" layoutX="454.0" layoutY="366.0" style="-fx-font-size: 16px;" text="Current Version: 1.0.0" wrappingWidth="157.0" />
+         <Label layoutX="446.0" layoutY="467.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Developer Credits:" />
+         <Text fill="#fafafa" layoutX="83.0" layoutY="535.0" style="-fx-font-size: 16px;" text="DriveSmart DSMS is developed by Kavindu Jayasundara" textAlignment="CENTER" wrappingWidth="900.0" />
+         <Label layoutX="405.0" layoutY="660.0" styleClass="footer-label" text="© 2024 DriveSmart Solutions. All rights reserved." />
+         <Text fill="WHITE" layoutX="440.0" layoutY="403.0" style="-fx-font-size: 16px;" text="Release Date: 2024-11-22" wrappingWidth="186.0" />
+         <HBox layoutX="432.0" layoutY="562.0" prefHeight="40.0" prefWidth="200.0" spacing="10">
+            <children>
+               <FontIcon iconColor="#0077b5" iconLiteral="bi-linkedin" iconSize="30" onMouseClicked="#openLinkedIn" />
+               <FontIcon iconColor="#1877f2" iconLiteral="bi-facebook" iconSize="30" onMouseClicked="#openFacebook" />
+               <FontIcon iconColor="#25d366" iconLiteral="bi-whatsapp" iconSize="30" onMouseClicked="#openWhatsApp" />
+               <FontIcon iconColor="#0088cc" iconLiteral="bi-telegram" iconSize="30" onMouseClicked="#openTelegram" />
+               <FontIcon iconColor="#7289da" iconLiteral="bi-discord" iconSize="30" onMouseClicked="#openDiscord" />
+            </children>
+         </HBox>
+      </AnchorPane>
+      <AnchorPane fx:id="navBarPane" layoutX="240.0" layoutY="30.0" prefHeight="60.0" prefWidth="600.0" styleClass="root">
+         <children>
+            <HBox alignment="CENTER" layoutX="27.0" layoutY="10.0" prefHeight="40.0" prefWidth="545.0" styleClass="hbox">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#accountBtnOnAction" prefHeight="58.0" prefWidth="109.0" text="Account" />
+                  <Button layoutX="337.0" layoutY="10.0" mnemonicParsing="false" onAction="#adminButtonOnAction" prefHeight="58.0" prefWidth="109.0" text="Users" />
+                  <Button layoutX="446.0" layoutY="10.0" mnemonicParsing="false" onAction="#databaseBtnOnAction" prefHeight="58.0" prefWidth="109.0" text="Resource" />
+                  <Button layoutX="119.0" layoutY="10.0" mnemonicParsing="false" onAction="#supportBtnOnAction" prefHeight="58.0" prefWidth="109.0" text="Support" />
+                  <Button layoutX="228.0" layoutY="10.0" mnemonicParsing="false" onAction="#aboutBtnOnAction" prefHeight="58.0" prefWidth="109.0" text="About" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

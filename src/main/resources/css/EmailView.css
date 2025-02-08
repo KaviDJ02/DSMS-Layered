@@ -1,0 +1,84 @@
+/* General styles for the dark theme */
+.root {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #e0e0e0;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* Styles for labels */
+.label {
+    -fx-text-fill: #dcdcdc;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Styles for text fields */
+.text-field {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #888888;
+    -fx-border-color: #444444;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.text-field:focused {
+    -fx-border-color: #007acc;
+    -fx-background-color: #333333;
+}
+
+/* Styles for buttons */
+.button {
+    -fx-background-color: #3a3d41;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #444444;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px 15px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #007acc;
+    -fx-text-fill: #ffffff;
+}
+
+.button:pressed {
+    -fx-background-color: #005f99;
+    -fx-text-fill: #ffffff;
+}
+
+/* Styles for WebView */
+.web-view {
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #444444;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Styles for other interactive elements (e.g., ScrollPane, VBox) */
+.scroll-pane {
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #444444;
+    -fx-border-radius: 5px;
+}
+
+.vbox {
+    -fx-background-color: #1e1e1e;
+}
+
+/* Consistent spacing and padding for containers */
+.anchor-pane {
+    -fx-padding: 10px;
+}
+
+/* Focus ring styling */
+:focused {
+    -fx-border-color: #007acc;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 5px;
+}

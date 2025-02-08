@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="payment_receipt" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+    <queryString>
+        <![CDATA[]]>
+    </queryString>
+    <field name="studentId" class="java.lang.Integer"/>
+    <field name="packageId" class="java.lang.Integer"/>
+    <field name="amount" class="java.math.BigDecimal"/>
+    <field name="amountDue" class="java.math.BigDecimal"/>
+    <field name="receivedDate" class="java.lang.String"/>
+    <field name="dueDate" class="java.lang.String"/>
+    <field name="status" class="java.lang.String"/>
+    <title>
+        <band height="50">
+            <staticText>
+                <reportElement x="0" y="0" width="555" height="30"/>
+                <textElement textAlignment="Center"/>
+                <text><![CDATA[Payment Receipt]]></text>
+            </staticText>
+        </band>
+    </title>
+    <detail>
+        <band height="20">
+            <textField>
+                <reportElement x="0" y="0" width="100" height="20"/>
+                <textFieldExpression><![CDATA[$F{studentId}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="100" y="0" width="100" height="20"/>
+                <textFieldExpression><![CDATA[$F{packageId}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="200" y="0" width="100" height="20"/>
+                <textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="300" y="0" width="100" height="20"/>
+                <textFieldExpression><![CDATA[$F{amountDue}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="400" y="0" width="100" height="20"/>
+                <textFieldExpression><![CDATA[$F{receivedDate}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="500" y="0" width="100" height="20"/>
+                <textFieldExpression><![CDATA[$F{dueDate}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="600" y="0" width="100" height="20"/>
+                <textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>

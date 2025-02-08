@@ -1,0 +1,91 @@
+/* CourseCard.css */
+
+/* Main Course Card Container */
+.course-card {
+    -fx-background-color: linear-gradient(to bottom, #3c3f58, #2c2e42);
+    -fx-background-radius: 15;
+    -fx-border-color: #5a5d79;
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 12, 0, 0, 6);
+}
+
+/* Course Title */
+.course-title {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 20px;
+    -fx-font-weight: 600;
+    -fx-wrap-text: true;
+}
+
+/* Course Description */
+.course-description {
+    -fx-text-fill: #a8aec3;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-wrap-text: true;
+}
+
+/* Course Duration */
+.course-duration {
+    -fx-text-fill: #57c3ff;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+}
+
+/* Course Price */
+.course-price {
+    -fx-text-fill: #ffd700;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* Enroll Button */
+.enroll-button {
+    -fx-background-color: #57c3ff;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-weight: 600;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+.enroll-button:hover {
+    -fx-background-color: #68d4ff;
+}
+
+.enroll-button:pressed {
+    -fx-background-color: #459ecc;
+}
+
+/* Icon Buttons for Edit and Delete */
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-border-color: #5a5d79;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 50;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+.icon-button:hover {
+    -fx-border-color: #57c3ff;
+}
+
+.icon-button:pressed {
+    -fx-border-color: #459ecc;
+    -fx-background-color: #3c3f58;
+}
+
+/* FontIcon Styling */
+.icon-button FontIcon {
+    -fx-icon-color: #ffffff;
+    -fx-icon-size: 18px;
+}

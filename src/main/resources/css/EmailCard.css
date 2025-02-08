@@ -1,0 +1,20 @@
+/* EmailCard.css */
+
+/* Styles for the EmailCard */
+.anchor-pane {
+    -fx-background-color: #3c3f41;
+    -fx-border-color: #4a4e51;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.label {
+    -fx-text-fill: #ffffff;
+}
+
+.label.bold {
+    -fx-font-weight: bold;
+    -fx-text-fill: #00aaff;
+}

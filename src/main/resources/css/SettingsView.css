@@ -1,0 +1,117 @@
+/* General styling */
+.root {
+    -fx-background-color: #24243e; /* Dark background */
+    /*-fx-text-fill: #c9d1d9; !* Light text for readability *!*/
+}
+
+/* Section headers */
+.section-header {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #82aaff; /* Soft blue accent */
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #c9d1d9;
+}
+
+.list-view {
+    -fx-background-color: #2a2a40;
+    -fx-text-fill: #c9d1d9;
+    -fx-border-color: #82aaff;
+    -fx-border-width: 1;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #3b4b73; /* Blue tone button */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+}
+
+.button:hover {
+    -fx-background-color: #5065a8; /* Lighter blue for hover effect */
+}
+
+.button:pressed {
+    -fx-background-color: #2d3e67; /* Darker blue for pressed effect */
+}
+
+/* TextField and PasswordField */
+.text-field,
+.password-field {
+    -fx-background-color: #2a2a40;
+    -fx-text-fill: #c9d1d9;
+    -fx-prompt-text-fill: #4e556b; /* Subtle placeholder color */
+    -fx-border-color: #82aaff;
+    -fx-border-width: 1;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #a8ccff;
+}
+
+/* Font icons */
+.font-icon {
+    -fx-fill: #82aaff; /* Matches the accent color */
+}
+
+/* AnchorPanes for structure */
+.anchor-pane {
+    -fx-background-color: transparent; /* Ensures panes don't overwrite root */
+}
+
+/* HBox styling */
+.hbox {
+    -fx-spacing: 10 5;
+}
+
+/* VBox styling */
+.vbox {
+    -fx-spacing: 10;
+}
+
+/* Specific Pane Styling */
+#accountPane, #supportPane, #aboutPane, #databasePane, #adminPane {
+    -fx-background-color: #24243e; /* Slightly lighter background to distinguish sections */
+}
+
+/* Navigation bar */
+#navBarPane {
+    -fx-background-color: #1f2335;
+    -fx-border-color: #3b4b73;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+}
+
+#navBarPane .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #82aaff;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5;
+    -fx-padding: 5 10;
+}
+
+#navBarPane .button:hover {
+    -fx-background-color: #3b4b73;
+    -fx-text-fill: white;
+}
+
+/* Footer credits styling */
+.footer-label {
+    -fx-text-fill: #666c80; /* Dimmed text color */
+    -fx-font-size: 12px; /* Smaller font size */
+    -fx-font-style: italic;
+}
+
+

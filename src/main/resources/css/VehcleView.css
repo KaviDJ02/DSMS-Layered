@@ -1,0 +1,103 @@
+/* VehicleView.css */
+
+/* Root Container */
+.root {
+    -fx-background-color: #2b2d42;
+    -fx-padding: 20;
+}
+
+.cards {
+    -fx-background-color: #2b2d41;
+    -fx-border-color: #007cfc;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(gaussian, rgb(23, 26, 41), 10, 0, 0, 3);
+}
+
+/* Labels */
+Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+
+Label#totalVehicalLLabel {
+    -fx-text-fill: #ffd700;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Buttons */
+Button {
+    -fx-background-color: #57c3ff;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-background-color: #68d4ff;
+}
+
+Button:pressed {
+    -fx-background-color: #459ecc;
+}
+
+/* ChoiceBoxes */
+ChoiceBox {
+    -fx-background-color: #3c3f58;
+    -fx-border-color: #5a5d79;
+    -fx-border-radius: 10;
+    -fx-padding: 5;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #ffffff;
+    -fx-pref-height: 46;
+}
+
+ChoiceBox .arrow {
+    -fx-background-color: #57c3ff;
+}
+
+/* TextFields */
+TextField {
+    -fx-background-color: #3c3f58;
+    -fx-border-color: #5a5d79;
+    -fx-border-radius: 10;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-padding: 8;
+}
+
+TextField:focused {
+    -fx-border-color: #57c3ff;
+}
+
+/* ScrollPane */
+ScrollPane {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+ScrollPane .viewport {
+    -fx-background-color: transparent;
+}
+
+.vbox {
+    -fx-spacing: 10;
+    -fx-padding: 10;
+}
+
+/* FontIcon */
+FontIcon {
+    -fx-icon-color: #ffffff;
+}
+
+FontIcon:hover {
+    -fx-icon-color: #57c3ff;
+}

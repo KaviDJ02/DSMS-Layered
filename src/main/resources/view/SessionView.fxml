@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1035.0" stylesheets="@../css/SessionView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.drivesmart.dsms.controller.SessionViewController">
+    <AnchorPane fx:id="mainPane" prefHeight="720.0" prefWidth="1035.0" visible="false">
+        <children>
+
+            <!-- Month Label -->
+            <Label fx:id="monthLabel" layoutX="133.0" layoutY="187.0" prefHeight="35.0" prefWidth="209.0" />
+
+            <!-- Navigation Buttons -->
+            <Button fx:id="prevMonthButton" layoutX="56.0" layoutY="184.0" onAction="#prevMonthButtonOnAction" prefHeight="22.0" prefWidth="70.0">
+                <graphic>
+                    <FontIcon iconColor="#a3bffa" iconLiteral="bi-arrow-left-short" iconSize="30" />
+                </graphic>
+            </Button>
+            <Button fx:id="nextMonthButton" layoutX="350.0" layoutY="184.0" onAction="#nextMonthButtonOnAction" prefWidth="70.0">
+                <graphic>
+                    <FontIcon iconColor="#a3bffa" iconLiteral="bi-arrow-right-short" iconSize="30" />
+                </graphic>
+            </Button>
+
+            <!-- Calendar GridPane -->
+            <GridPane fx:id="calendarGrid" gridLinesVisible="true" layoutX="56.0" layoutY="253.0" prefHeight="419.0" prefWidth="923.0">
+                <!-- Headers for days of the week -->
+                <Label prefHeight="38.0" prefWidth="141.0" styleClass="daysOfWeek" text="Sun" GridPane.columnIndex="0" />
+                <Label prefHeight="38.0" prefWidth="131.0" styleClass="daysOfWeek" text="Mon" GridPane.columnIndex="1" />
+                <Label prefHeight="38.0" prefWidth="124.0" styleClass="daysOfWeek" text="Tue" GridPane.columnIndex="2" />
+                <Label prefHeight="38.0" prefWidth="135.0" styleClass="daysOfWeek" text="Wed" GridPane.columnIndex="3" />
+                <Label prefHeight="38.0" prefWidth="129.0" styleClass="daysOfWeek" text="Thu" GridPane.columnIndex="4" />
+                <Label prefHeight="38.0" prefWidth="123.0" styleClass="daysOfWeek" text="Fri" GridPane.columnIndex="5" />
+                <Label prefHeight="35.0" prefWidth="660.0" styleClass="daysOfWeek" text="Sat" GridPane.columnIndex="6" />
+                <columnConstraints>
+                    <ColumnConstraints maxWidth="142.199951171875" minWidth="49.59998626708985" prefWidth="142.199951171875" />
+                    <ColumnConstraints maxWidth="172.2666442871094" minWidth="62.3999755859375" prefWidth="133.06665039062497" />
+                    <ColumnConstraints maxWidth="232.60000000000002" minWidth="46.99997863769531" prefWidth="126.13334960937505" />
+                    <ColumnConstraints maxWidth="301.6000213623047" minWidth="60.53327941894531" prefWidth="137.66669921874995" />
+                    <ColumnConstraints maxWidth="391.99995727539056" minWidth="49.59996337890627" prefWidth="131.7332763671875" />
+                    <ColumnConstraints maxWidth="511.73336181640633" minWidth="37.06670532226565" prefWidth="125.3332641601562" />
+                    <ColumnConstraints maxWidth="652.5332946777344" minWidth="126.39999999999998" prefWidth="126.39999999999998" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                </rowConstraints>
+            </GridPane>
+            <AnchorPane layoutX="56.0" layoutY="62.0" prefHeight="61.0" prefWidth="362.0">
+                <children>
+                    <Label layoutX="70.0" layoutY="22.0" text="Today Sessions :" textFill="WHITE" />
+                    <Label fx:id="todaySessionsCount" alignment="CENTER" layoutX="186.0" layoutY="22.0" prefHeight="17.0" prefWidth="107.0" text="30" textFill="WHITE" />
+                </children>
+            </AnchorPane>
+        </children>
+    </AnchorPane>
+    <AnchorPane fx:id="addSessionPane" prefHeight="720.0" prefWidth="1035.0">
+        <children>
+            <AnchorPane layoutX="581.0" layoutY="45.0" prefHeight="568.0" prefWidth="385.0">
+                <children>
+                    <Label layoutX="158.0" layoutY="35.0" text="Add new Session" textFill="WHITE" />
+                    <Label layoutX="90.0" layoutY="121.0" text="Time" textFill="WHITE" />
+                    <FontIcon iconColor="WHITE" iconLiteral="dashicons-clock" iconSize="20" layoutX="50.0" layoutY="193.0" />
+                    <ComboBox fx:id="hourComboBox" layoutX="85.0" layoutY="163.0" prefHeight="40.0" prefWidth="60.0" />
+                    <ComboBox fx:id="minuteComboBox" layoutX="173.0" layoutY="163.0" prefHeight="40.0" prefWidth="60.0" />
+                    <TextField fx:id="studentTF" layoutX="82.0" layoutY="235.0" prefHeight="40.0" prefWidth="254.0" promptText="Select Student" />
+                    <Label layoutX="89.0" layoutY="213.0" text="Student" textFill="WHITE" />
+                    <FontIcon iconColor="WHITE" iconLiteral="bi-person-fill" iconSize="20" layoutX="50.0" layoutY="265.0" />
+                    <TextField fx:id="instructorTF" layoutX="82.0" layoutY="311.0" prefHeight="40.0" prefWidth="254.0" promptText="Select Instructor" />
+                    <Label layoutX="89.0" layoutY="289.0" text="Instructor" textFill="WHITE" />
+                    <FontIcon iconColor="WHITE" iconLiteral="dashicons-businessman" iconSize="20" layoutX="50.0" layoutY="341.0" />
+                    <TextField fx:id="vehicleTF" layoutX="82.0" layoutY="390.0" prefHeight="40.0" prefWidth="254.0" promptText="Select Vehicle" />
+                    <Label layoutX="89.0" layoutY="368.0" text="Vehicle" textFill="WHITE" />
+                    <FontIcon iconColor="WHITE" iconLiteral="dashicons-car" iconSize="20" layoutX="50.0" layoutY="420.0" />
+                    <Button layoutX="108.0" layoutY="480.0" mnemonicParsing="false" onAction="#createSessionBtnOnAction" prefHeight="40.0" prefWidth="190.0" text="Create Session" />
+                    <Label fx:id="dateLabel" alignment="CENTER" layoutX="133.0" layoutY="88.0" prefHeight="17.0" prefWidth="141.0" text="Date" textFill="WHITE" />
+               <Label alignment="CENTER" layoutX="145.0" layoutY="163.0" prefHeight="39.0" prefWidth="25.0" text=":" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="27.0" />
+                  </font></Label>
+               <Label layoutX="103.0" layoutY="145.0" text="HH" textFill="WHITE" />
+               <Label layoutX="192.0" layoutY="145.0" text="MM" textFill="WHITE" />
+                </children>
+            </AnchorPane>
+            <FontIcon iconColor="#fcfcfc" iconLiteral="dashicons-arrow-left-alt" iconSize="25" layoutX="56.0" layoutY="78.0" onMouseClicked="#backOnAction" />
+         <ScrollPane hbarPolicy="NEVER" layoutX="136.0" layoutY="91.0" prefHeight="538.0" prefWidth="370.0" vbarPolicy="NEVER">
+            <content>
+                  <VBox fx:id="sessionsVbox" prefHeight="538.0" prefWidth="370.0" />
+            </content>
+         </ScrollPane>
+        </children>
+    </AnchorPane>
+</AnchorPane>

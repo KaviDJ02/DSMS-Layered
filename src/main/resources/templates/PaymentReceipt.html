@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+</head>
+<body style="font-family: Arial, sans-serif; color: #333; background-color: #f4f4f4; padding: 20px;">
+<div style="max-width: 600px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center; color: #2d87f0;">Payment Receipt</h2>
+    <p>Dear <strong>{studentName}</strong>,</p>
+
+    <p>Thank you for your recent payment. Below are the details of your payment:</p>
+
+    <table style="width: 100%; margin: 20px 0; border-collapse: collapse;">
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;">Amount Paid</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">LKR {amount}</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;">Received Date</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">{receivedDate}</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;">Due Amount</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">LKR {dueAmount}</td>
+        </tr>
+    </table>
+
+    <p style="font-weight: bold; color: #ff4c4c;">Please note that the due amount of LKR {dueAmount} is still pending.</p>
+
+    <p>If you have any questions or need further assistance, feel free to contact us.</p>
+
+    <p>Best regards,<br>
+        The DriveSmart DSMS Team</p>
+</div>
+</body>
+</html>

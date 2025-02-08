@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="181.0" prefWidth="767.0" styleClass="course-card" stylesheets="@../css/CourseCard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.drivesmart.dsms.controller.PackageCardController">
+    <children>
+        <!-- Main Container -->
+        <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="20.0" spacing="20.0">
+
+            <!-- Left Section: Course Info -->
+            <VBox prefHeight="131.0" prefWidth="568.0" spacing="10.0">
+                <Label fx:id="courseNameLabel" styleClass="course-title" text="Package 1">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+
+                <Label fx:id="courseDescriptionLabel" prefWidth="480.0" styleClass="course-description" text="Course Description" wrapText="true" />
+
+                <HBox alignment="CENTER_LEFT" spacing="15.0">
+                    <Label fx:id="durationLabel" styleClass="course-duration" text="8 Months">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+
+                    <Label fx:id="packagePrice" styleClass="course-price" text="RS. 55000">
+                        <font>
+                            <Font size="22.0" />
+                        </font>
+                    </Label>
+                </HBox>
+            </VBox>
+
+            <!-- Right Section: Actions -->
+            <VBox alignment="TOP_CENTER" spacing="10.0">
+                <!-- Enroll Button -->
+                <Button fx:id="enrollButton" prefHeight="80.0" prefWidth="100.0" styleClass="enroll-button" text="Enroll" />
+
+                <!-- Edit and Delete Buttons -->
+                <HBox spacing="10.0">
+                    <Button fx:id="editButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="icon-button">
+                        <graphic>
+                            <FontIcon iconColor="WHITE" iconLiteral="bi-pencil-fill" />
+                        </graphic>
+                    </Button>
+
+                    <Button fx:id="deleteBtton" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" styleClass="icon-button">
+                        <graphic>
+                            <FontIcon iconColor="WHITE" iconLiteral="bi-trash-fill" />
+                        </graphic>
+                    </Button>
+                </HBox>
+            </VBox>
+        </HBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1035.0" styleClass="root" stylesheets="@../css/PackageView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.drivesmart.dsms.controller.PackageViewController">
+    <children>
+      <AnchorPane fx:id="mainView" prefHeight="720.0" prefWidth="1035.0">
+         <children>
+              <ScrollPane hbarPolicy="NEVER" layoutX="115.0" layoutY="261.0" prefHeight="439.0" prefWidth="805.0" vbarPolicy="NEVER" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="261.0">
+                  <content>
+                      <VBox fx:id="courseContainer" alignment="TOP_CENTER" prefHeight="434.0" prefWidth="800.0" spacing="10.0" />
+                  </content>
+              </ScrollPane>
+              <AnchorPane layoutX="625.0" layoutY="83.0" prefHeight="63.0" prefWidth="281.0" styleClass="anchor-pane">
+                  <children>
+                      <Label layoutX="37.0" layoutY="21.0" text="Total Packages" />
+                      <Label fx:id="totalPackageCount" alignment="CENTER" layoutX="159.0" layoutY="22.0" prefHeight="20.0" prefWidth="97.0" text="3" />
+                  </children>
+              </AnchorPane>
+              <Button layoutX="719.0" layoutY="186.0" mnemonicParsing="false" onAction="#addPackageOnAction" prefHeight="43.0" prefWidth="187.0" text="Add Package" />
+            <AnchorPane layoutX="130.0" layoutY="83.0" prefHeight="61.0" prefWidth="344.0" styleClass="anchor-pane">
+               <children>
+                  <Label layoutX="37.0" layoutY="21.0" text="Most Popular Package :" />
+                  <Label fx:id="mostPopularPackage" layoutX="198.0" layoutY="21.0" prefHeight="20.0" prefWidth="244.0" text="Pack1" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="130.0" layoutY="155.0" prefHeight="63.0" prefWidth="464.0" styleClass="anchor-pane">
+               <children>
+                  <Label layoutX="37.0" layoutY="21.0" text="Least Popular Package :" />
+                  <Label fx:id="leastPopularPackage" layoutX="198.0" layoutY="21.0" prefHeight="20.0" prefWidth="238.0" text="Pack1" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="addPackageView" prefHeight="720.0" prefWidth="1035.0" visible="false">
+         <children>
+            <TextField fx:id="pkgNameTF" layoutX="405.0" layoutY="182.0" prefHeight="43.0" prefWidth="226.0" />
+            <TextField fx:id="durationTF" layoutX="405.0" layoutY="389.0" prefHeight="43.0" prefWidth="226.0" />
+            <TextField fx:id="priceTF" layoutX="405.0" layoutY="464.0" prefHeight="43.0" prefWidth="226.0" />
+            <TextArea fx:id="descriptionTF" layoutX="405.0" layoutY="262.0" prefHeight="88.0" prefWidth="226.0" wrapText="true" />
+            <Label layoutX="415.0" layoutY="162.0" text="Package Name" />
+            <Label layoutX="415.0" layoutY="243.0" text="Description" />
+            <Label layoutX="415.0" layoutY="371.0" text="Duration" />
+            <Label layoutX="415.0" layoutY="447.0" text="Price" />
+            <Button fx:id="addNewPackageBtn" layoutX="405.0" layoutY="603.0" mnemonicParsing="false" onAction="#addPackageBtnOnAction" prefHeight="43.0" prefWidth="226.0" text="Add Package" />
+            <Label layoutX="469.0" layoutY="72.0" text="Add New Package" />
+            <FontIcon iconColor="WHITE" iconLiteral="bi-arrow-left" iconSize="30" layoutX="95.0" layoutY="113.0" onMouseClicked="#backOnAction" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="enrollPane" prefHeight="720.0" prefWidth="1035.0" visible="false">
+         <children>
+            <FontIcon iconColor="WHITE" iconLiteral="bi-arrow-left" iconSize="30" layoutX="85.0" layoutY="103.0" onMouseClicked="#backOnAction" />
+            <TextField fx:id="studentNameTF" layoutX="399.0" layoutY="317.0" prefHeight="43.0" prefWidth="238.0" promptText="select student" />
+            <Button layoutX="399.0" layoutY="405.0" mnemonicParsing="false" onAction="#enrollBtnOnAction" prefHeight="43.0" prefWidth="238.0" text="Enroll" />
+            <Label fx:id="packageNameLabel" alignment="CENTER" layoutX="390.0" layoutY="240.0" prefHeight="18.0" prefWidth="258.0" text="package" />
+            <Label layoutX="481.0" layoutY="79.0" text="Enroll Student" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,197 @@
+/*.root {*/
+/*    -fx-font-family: 'Arial';*/
+/*    -fx-background-color: #f5f8fc; !* Lightened background *!*/
+/*}*/
+
+/*.menuBar {*/
+/*    -fx-background-color: #d1e0ff;*/
+/*    -fx-background-radius: 0 20px 20px 0;*/
+/*    -fx-padding: 30px 20px; !* More padding for a cleaner look *!*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0.5, 0, 4);*/
+/*}*/
+
+/*.menuBar .button {*/
+/*    -fx-background-color: #d1e0ff;*/
+/*    -fx-pref-height: 42;*/
+/*    -fx-pref-width: 210;*/
+/*    -fx-text-fill: #0350a1;*/
+/*    -fx-font-size: 15px;*/
+/*    -fx-padding: 10px 15px;*/
+/*    -fx-margin: 10px 0;*/
+/*    -fx-background-radius: 5px;*/
+/*}*/
+
+/*.menuBar .button .font-icon {*/
+/*    -fx-font-size: 20;*/
+/*    -fx-fill: #0350a1;*/
+/*}*/
+
+/*.menuBar .button:hover .font-icon {*/
+/*    -fx-font-size: 20;*/
+/*    -fx-fill: #f8f8f8;*/
+/*}*/
+
+/*.menuBar .button:hover {*/
+/*    -fx-background-color: #4895fd;*/
+/*    -fx-text-fill: white; !* White text for contrast on hover *!*/
+/*    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0.3, 0, 3); !* Enhanced shadow on hover *!*/
+/*}*/
+
+/*.menuBar .button:pressed {*/
+/*    -fx-background-color: #0350a1;*/
+/*    -fx-text-fill: white;*/
+/*}*/
+
+/*.menuBar .button.logout {*/
+/*    !*-fx-background-color: rgb(213, 112, 112);*!*/
+/*    -fx-text-fill: #e61616;*/
+/*    -fx-pref-height: 42;*/
+/*    -fx-pref-width: 210;*/
+/*    -fx-font-size: 15px;*/
+/*    -fx-background-radius: 5px;*/
+/*}*/
+
+/*.menuBar .button .logout-icon {*/
+/*    -fx-font-size: 20;*/
+/*    -fx-fill: #dd1818;*/
+/*}*/
+
+/*.menuBar .button.logout:hover .logout-icon {*/
+/*    -fx-fill: #ffffff;*/
+/*}*/
+
+/*.menuBar .button.logout:hover {*/
+/*    -fx-background-color: #e85d5d; !* Slightly darker red on hover *!*/
+/*    -fx-text-fill: #fbfbfb;*/
+/*    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0.3, 0, 3);*/
+/*}*/
+
+/*.menuBar .button.logout:pressed {*/
+/*    -fx-background-color: #cf1111; !* Slightly darker red on hover *!*/
+/*    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0.3, 0, 3);*/
+/*}*/
+
+
+/*    dark mode*/
+
+/* Root Pane */
+.root {
+    -fx-font-family: 'Arial';
+    -fx-background-color: #2b2b2b; /* Dark background */
+}
+
+/* Menu Bar */
+.menuBar {
+    -fx-background-color: #3a3a3a;
+    /*-fx-background-radius: 0 20px 20px 0;*/
+    -fx-padding: 30px 20px;
+    /*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0.5, 0, 4);*/
+}
+
+.menuBar .button {
+    -fx-background-color: #3a3a3a;
+    -fx-pref-height: 42;
+    -fx-pref-width: 210;
+    -fx-text-fill: #d1d1d1;
+    -fx-font-size: 15px;
+    -fx-padding: 10px 15px;
+    -fx-margin: 10px 0;
+    -fx-background-radius: 5px;
+}
+
+.menuBar .button .font-icon {
+    -fx-font-size: 20;
+    -fx-fill: #d1d1d1;
+}
+
+.menuBar .button:hover .font-icon {
+    -fx-font-size: 20;
+    -fx-fill: #f8f8f8;
+}
+
+.menuBar .button:hover {
+    -fx-background-color: #575757;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0.3, 0, 3);
+}
+
+.menuBar .button:pressed {
+    -fx-background-color: #4a4a4a;
+    -fx-text-fill: white;
+}
+
+.menuBar .button.logout {
+    -fx-text-fill: #e61616;
+    -fx-pref-height: 42;
+    -fx-pref-width: 210;
+    -fx-font-size: 15px;
+    -fx-background-radius: 5px;
+}
+
+.menuBar .button .logout-icon {
+    -fx-font-size: 20;
+    -fx-fill: #dd1818;
+}
+
+.menuBar .button.logout:hover .logout-icon {
+    -fx-fill: #ffffff;
+}
+
+.menuBar .button.logout:hover {
+    -fx-background-color: #e85d5d;
+    -fx-text-fill: #fbfbfb;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0.3, 0, 3);
+}
+
+.menuBar .button.logout:pressed {
+    -fx-background-color: #cf1111;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0.3, 0, 3);
+}
+
+/* Username and Password Fields */
+.text-field,
+.password-field {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #555555;
+    -fx-border-width: 1;
+    -fx-padding: 0 5 0 30;
+    -fx-prompt-text-fill: #aaaaaa;
+    -fx-font-size: 14px;
+    -fx-background-color: #3a3a3a;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+    -fx-text-fill: #d1d1d1;
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 2;
+    -fx-background-color: #4a4a4a;
+    -fx-effect: dropshadow(three-pass-box, rgba(30,144,255,0.5), 10, 0, 0, 5);
+}
+
+.text-field:hover,
+.password-field:hover {
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 1.5;
+    -fx-background-color: #3a3a3a;
+}
+
+/* Button Styling */
+.button {
+    -fx-background-color: linear-gradient(to right, #1E90FF, #4682B4);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #1C86EE;
+    -fx-cursor: hand;
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to right, #1A78E6, #5B9BD5);
+}

@@ -1,0 +1,38 @@
+/* darkmode.css */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+}
+
+.anchor-pane {
+    -fx-background-color: #2b2b2b;
+    -fx-padding: 10px;
+    -fx-border-color: #1e90ff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button {
+    -fx-background-color: #1e90ff;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #1e90ff;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.combo-box {
+    -fx-background-color: #3b3b3b;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #1e90ff;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.text-field {
+    -fx-background-color: #3b3b3b;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #1e90ff;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}

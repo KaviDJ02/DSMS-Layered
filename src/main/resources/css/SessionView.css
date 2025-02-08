@@ -1,0 +1,76 @@
+/* SessionView.css */
+
+/* General AnchorPane style */
+AnchorPane {
+    -fx-background-color: #1e1e2e;
+    -fx-padding: 0;
+}
+
+/* Month Label Style */
+#monthLabel {
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 4, 0.5, 0, 1);
+}
+
+/* Navigation Button Styles */
+#prevMonthButton, #nextMonthButton {
+    -fx-background-color: #2c3e50;
+    -fx-text-fill: #a3bffa;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 5 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 4, 0.5, 0, 1);
+}
+
+#prevMonthButton:hover, #nextMonthButton:hover {
+    -fx-background-color: #3b4a60;
+    -fx-text-fill: #ffffff;
+}
+
+/* Calendar GridPane Style */
+#calendarGrid {
+    -fx-border-color: #474e5e;
+    -fx-border-width: 1;
+    -fx-background-color: #1b1e27;
+}
+
+#calendarGrid.daysOfWeek {
+    -fx-font-size: 14px;
+    -fx-text-fill: #e41818;
+    -fx-alignment: center;
+    -fx-background-color: #1e293b;
+    -fx-border-color: #2e3440;
+    -fx-border-width: 0.5;
+    -fx-padding: 8;}
+
+/* General Label Style for Days */
+#calendarGrid .label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-alignment: center;
+    /*-fx-background-color: #1e293b;*/
+    /*-fx-border-color: #2e3440;*/
+    -fx-border-width: 0.5;
+    -fx-padding: 8 16;
+    -fx-background-radius: 20;
+}
+
+
+
+/* Hover Effect for Calendar Labels */
+#calendarGrid .label:hover {
+    -fx-background-color: #30475e;
+}
+
+/* Styling for Sunday and Saturday (weekend days) */
+#calendarGrid .sun {
+    -fx-text-fill: #ff6b6b; /* Sunday - red for emphasis */
+}
+
+#calendarGrid .sat {
+    -fx-text-fill: #4ea8de; /* Saturday - blue for weekend */
+}

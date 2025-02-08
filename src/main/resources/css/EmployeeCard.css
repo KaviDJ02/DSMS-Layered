@@ -1,0 +1,67 @@
+/* EmployeeCard.css */
+
+/* AnchorPane */
+.anchor-pane {
+    -fx-background-color: #2b2d42;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-pref-width: 400;
+    -fx-pref-height: 149;
+    -fx-border-color: #4895fd;
+    -fx-border-width: 2;
+}
+
+/* VBox */
+VBox {
+    -fx-alignment: center;
+    -fx-spacing: 5;
+}
+
+/* Labels */
+Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+}
+
+/* Edit Button */
+Button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-background-color: #57c3ff;
+    -fx-background-radius: 5;
+}
+
+Button:pressed {
+    -fx-background-color: #459ecc;
+}
+
+/* FontIcon inside buttons */
+Button .graphic {
+    -fx-fill: white;
+}
+
+/* Delete Button */
+Button#deleteOnAction {
+    -fx-layout-x: 299.0;
+    -fx-layout-y: 69.0;
+}
+
+Button#editOnAction {
+    -fx-layout-x: 299.0;
+    -fx-layout-y: 20.0;
+}
+
+FontIcon {
+    -fx-icon-size: 20;
+}
+
+FontIcon:hover {
+    -fx-icon-color: #57c3ff;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="150.0" prefWidth="370.0" styleClass="anchor-pane" stylesheets="@../css/SessionCard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.drivesmart.dsms.controller.SessionCardController">
+    <children>
+        <Label fx:id="timeLabel" alignment="CENTER" layoutX="100.0" layoutY="14.0" prefHeight="29.0" prefWidth="170.0" styleClass="label" text="Time" />
+        <Label layoutX="26.0" layoutY="56.0" prefHeight="18.0" prefWidth="111.0" styleClass="label" text="Student :" />
+        <Label layoutX="26.0" layoutY="83.0" prefHeight="18.0" prefWidth="111.0" styleClass="label" text="Instructor :" />
+        <Label layoutX="26.0" layoutY="110.0" prefHeight="18.0" prefWidth="111.0" styleClass="label" text="Vehicle :" />
+        <Label fx:id="studentName" layoutX="100.0" layoutY="57.0" prefHeight="18.0" prefWidth="198.0" styleClass="label" text="Label" />
+        <Label fx:id="instructorName" layoutX="100.0" layoutY="83.0" prefHeight="18.0" prefWidth="198.0" styleClass="label" text="Label" />
+        <Label fx:id="vehicleModel" layoutX="100.0" layoutY="110.0" prefHeight="18.0" prefWidth="198.0" styleClass="label" text="Label" />
+    </children>
+</AnchorPane>
