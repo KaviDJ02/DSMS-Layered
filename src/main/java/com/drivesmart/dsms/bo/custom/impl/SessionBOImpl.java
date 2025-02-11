@@ -18,7 +18,7 @@ public class SessionBOImpl implements SessionBO {
 
     @Override
     public ArrayList<SessionDTO> getAllSessions(String clickedDay) throws SQLException, ClassNotFoundException {
-        ArrayList<Session> sessions = sessionDAO.getAll();
+        ArrayList<Session> sessions = (ArrayList<Session>) sessionDAO.getAllSessions(clickedDay);
         ArrayList<SessionDTO> sessionDTOs = new ArrayList<>();
         for (Session session : sessions) {
             sessionDTOs.add(new SessionDTO(session.getSessionDate(), session.getVehicleId(), session.getEmployeeId(), session.getStudentId(), session.getSessionTime()));

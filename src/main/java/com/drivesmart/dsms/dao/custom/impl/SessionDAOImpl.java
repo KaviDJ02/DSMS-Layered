@@ -16,6 +16,29 @@ public class SessionDAOImpl implements SessionDAO {
         return null;
     }
 
+    public List<Session> getAllSessions(String date) {
+        List<Session> sessions = new ArrayList<>();
+        String query = "SELECT * FROM session WHERE session_date = ?";
+        System.out.println("Query: " + query);
+        System.out.println("Date: " + date);
+
+        try (ResultSet resultSet = CrudUtil.execute(query,date)) {
+            while (resultSet.next()) {
+                String sessionDate = String.valueOf(resultSet.getDate("session_date"));
+                int vehicleId = resultSet.getInt("vehicle_id");
+                int employeeId = resultSet.getInt("employee_id");
+                int studentId = resultSet.getInt("student_id");
+                String sessionTime = String.valueOf(resultSet.getTime("session_time"));
+
+                sessions.add(new Session(sessionDate, vehicleId, employeeId, studentId, sessionTime));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return sessions;
+    }
+
     @Override
     public boolean save(Session dto) throws SQLException, ClassNotFoundException {
         String query = "INSERT INTO session(session_date, vehicle_id, employee_id, student_id, session_time) VALUES(?,?,?,?,?)";

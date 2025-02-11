@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface SessionDAO extends CrudDAO<Session> {
+    List<Session> getAllSessions(String date) throws SQLException, ClassNotFoundException;
     int getSessionCount(String date) throws SQLException, ClassNotFoundException;
     List<String> getStudentsNames() throws SQLException, ClassNotFoundException;
     List<String> getInstructorsNames() throws SQLException, ClassNotFoundException;
